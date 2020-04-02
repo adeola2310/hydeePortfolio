@@ -1,0 +1,337 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /*font-family: 'Inconsolata', monospace;*/
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navigation__checkbox{
+display: none;
+}
+
+/*Functionality for the navigation*/
+.navigation__checkbox:checked ~ .navigation__background{
+    transform: scale(80);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav{
+    opacity: 1;
+    width: 100%;
+}
+
+.navigation__icon{
+margin-top: 3rem;
+position: relative;
+}
+.navigation__icon::before,
+.navigation__icon::after,
+.navigation__icon {
+width: 3rem;
+    height: 2px;
+    background-color: #000000;
+    display: inline-flex;
+}
+.navigation__icon::before,
+.navigation__icon::after{
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.navigation__icon::before{
+    top: -1rem;
+}
+.navigation__icon::after{
+top: 1rem;
+}
+.navigation__icon:checked + .navigation__button + .navigation__icon{
+    background-color: transparent;
+}
+
+
+.navigation__button{
+height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    cursor: pointer;
+    text-align: center;
+    z-index: 2000;
+    background-color: #ffffff;
+    box-shadow: 0 1rem 3rem rgba(#000000, .1);
+}
+.navigation__background{
+width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-image: radial-gradient(#000000, #bdbdbd);
+    /*background-color: black;*/
+    position: fixed;
+    opacity: 0.5;
+    top: 6.5rem;
+    right: 6.5rem;
+    z-index: 1000;
+    transition: transform .8s;
+    /*transform: scale(80);*/
+}
+.navigation__list{
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+.navigation__item{
+margin: 3rem;
+}
+.navigation__link{
+    font-weight: 300;
+    display: inline-flex;
+    font-size: 2rem;
+    text-transform: none;
+    text-transform: uppercase;
+    /*background-image: linear-gradient(120deg, #000000, #bdbdbd);*/
+    transition: all .5s;
+    background-size: 220%;
+
+}
+.navigation__link:hover{
+background-position: 100%;
+    color: #ffffff;
+}
+.navigation__nav{
+height: 100vh;
+    /*width: 100%;*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition: all .8s;
+}
+
+.header{
+    background-color: #000000;
+    height: 100vh;
+    color: #ffffff;
+    font-size: 16px;
+}
+.header__nav{
+    padding: 45px 75px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__nav--logo{
+    font-size: 20px;
+    position: fixed;
+}
+.all-list{
+}
+.items{
+    display: inline-flex;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+a{
+    text-decoration: none;
+}
+.btn-contact{
+    border-radius: 3px;
+    border: 2px solid #ffffff;
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    background-color: #000000;
+}
+
+.banner{
+    padding: 65px 75px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner__text--header{
+    letter-spacing: 2px;
+    font-size: 38px;
+    padding-top: 55px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 2px; /* Adjust as needed */
+    animation:
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+}
+.banner__text--paragraph{
+ padding-top: 10px;
+    font-size: 14px;
+    line-height: 2;
+}
+.banner__span{
+
+}
+.cv{
+    padding-top: 30px;
+}
+.btn-cv{
+    border-radius: 3px;
+    border: 2px solid #ffffff;
+    color: white;
+    padding: 15px 55px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #000000;
+}
+.profile-image{
+    animation: updown 8s ease infinite;
+}
+
+
+.license{
+    margin-top: 5rem;
+}
+.license__heading{
+    text-align: center;
+    color: rgba(169,169,169);
+    text-transform: uppercase;
+    font-size: 2.6rem;
+}
+.license__heading:hover{
+    transform: skewY(7deg);
+}
+.license__sec{
+    display: grid;
+    grid-template-columns: repeat(2, 10fr);
+    grid-column-gap: 45px;
+    padding: 15px;
+}
+.license__card{
+    margin-top: 40px;
+background-color: #ffffff;
+    border-radius: 30px;
+    /*padding: 1rem;*/
+    box-shadow: 10px 10px 5px 3px  #bdbdbd;
+    border: 5px solid #ffffff;
+}
+.license__card:hover{
+    cursor: pointer;
+    transform: scaleY(1.2);
+    /*transform: skewY(-7deg);*/
+}
+.license__pic{
+    border-radius: 50px;
+    width: 95px;
+}
+.details{
+    text-align: center;
+    padding: 35px 35px;
+}
+.details__header{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.details__paragraph{
+    line-height: 2;
+    font-size: 1.6rem;
+}
+
+.credentials{
+    border-radius: 100px;
+    border: 1px solid #f2f2f2;
+    padding: 10px 35px;
+     background-color: cornsilk;
+
+}
+
+.experience{
+    margin-top: 6.5rem;
+}
+
+.experience__header{
+    text-align: center;
+    color: rgba(169,169,169);
+    text-transform: uppercase;
+    font-size: 2.6rem;
+}
+.experience__header:hover{
+    transform: skewY(7deg);
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 75px;
+    color: #ffffff;
+    background-color: black;
+}
+a {
+    color: white;
+}
+.social__item{
+    display: inline-flex;
+    list-style: none;
+}
+.social__item--list{
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+@keyframes updown {
+    0% {
+        transform: translateY(-10%);
+    }
+
+    50% {
+        transform: translateY(5%);
+    }
+
+    100% {
+        transform: translateY(-5%);
+    }
+}
+@keyframes move {
+
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ffffff; }
+}

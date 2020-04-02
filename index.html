@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HydeeNoble</title>
+    <link rel="stylesheet" href="styles.css">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&display=swap" rel="stylesheet">-->
+</head>
+<body>
+<div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+    </label>
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+        <ul class="navigation__list">
+            <li class="navigation__item"><a href="" class="navigation__link"> About us</a> </li>
+            <li class="navigation__item"><a href="" class="navigation__link"> About us</a> </li>
+            <li class="navigation__item"><a href="" class="navigation__link"> About us</a> </li>
+            <li class="navigation__item"> <a class="btn-contact" href="mailto:hydenoble39@gmail.com" target="_blank">Get in touch</a>
+
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<header class="header">
+    <nav class="header__nav" id="navbar">
+        <div class="header__nav--logo">
+            <p> HydeeNoble</p>
+        </div>
+
+
+
+<!--        <ul class="all-list">-->
+<!--            <li class="items">Home</li>-->
+<!--            <li class="items">Home</li>-->
+<!--            <li class="items">Home</li>-->
+<!--            <li class="items">-->
+<!--                <a class="btn-contact" href="mailto:hydenoble39@gmail.com" target="_blank">Get in touch</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+    </nav>
+
+    <div class="banner">
+        <div class="banner__text">
+            <h2 class="banner__text--header">
+                Hi, I am Emehinola Idowu
+            </h2>
+            <p class="banner__text--paragraph">
+                I am a skilled DevOps Engineer with 4 years of hands-on experience
+            </p>
+            <span class="banner__span">as a Software Engineer and recently supporting, automating, and</span>
+            <br>
+            <br>optimizing mission-critical deployments in AWS, leveraging</br>
+            <br>configuration management, CI/CD, and DevOps processes.</br>
+            <div class="cv">
+                <button class="btn-cv">View resume</button>
+            </div>
+        </div>
+
+        <div class="banner__image">
+            <img src="image/hydee.svg" alt="profile__picture" class="profile-image">
+        </div>
+    </div>
+
+</header>
+
+<main>
+
+    <section class="license">
+        <h2 class="license__heading"> My License and Certifications</h2>
+        <div class="license__sec">
+            <div class="license__card">
+                <div class="details">
+                    <img src="https://images.youracclaim.com/size/680x680/images/f88d800c-5261-45c6-9515-0458e31c3e16/ckad%2Bfrom%2Bcncfsite.png"
+                         class="license__pic" alt="pic">
+                    <h4 class="details__header">CKAD: Certified Kubernetes Application Developer</h4>
+                    <p class="details__paragraph">The Linux Foundation
+
+                        Issued date and, if applicable, expiration date of the certification or licenseIssued Mar
+                        2020Expires Mar 2023
+
+                        Credential IdentifierCredential ID CKAD-2000-003248-0100</p>
+                    <button class="credentials">see credentials</button>
+                </div>
+
+            </div>
+            <div class="license__card">
+                <div class="details">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHiNSL4Or29cg/company-logo_100_100/0?e=1593648000&v=beta&t=Xnua31M8i6dNXydRZWhzGwNuasN1vwG2P6LiC3CCXyI
+"
+                         class="license__pic" alt="pic">
+                    <h4 class="details__header">Google Cloud Certified Professional Cloud Architect</h4>
+                    <p class="details__paragraph">The Google
+
+                        Issued date and, if applicable, expiration date of the certification or licenseIssued Mar
+                        2020Expires Mar 2023
+
+                        Credential IdentifierCredential ID CKAD-2000-003248-0100</p>
+                    <button class="credentials">see credentials</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="experience">
+        <h2 class="experience__header">My work experience</h2>
+    </section>
+
+</main>
+<!--<hr style="color: #f2f2f2; padding: 0;">-->
+<footer class="footer">
+    <ul class="social__item">
+        <li class="social__item--list">
+            <a class="fa fa-github" href="" style="color: white;"></a>
+        </li>
+        <li class="social__item--list">
+            <a class="fa fa-facebook" href=""></a>
+        </li>
+        <li class="social__item--list">
+            <a class="fa fa-twitter" href=""></a>
+        </li>
+        <li class="social__item--list">
+            <a class="fa fa-linkedin" href=""></a>
+        </li>
+    </ul>
+    <div class="date">
+        <p id="date">&copy; </p>
+    </div>
+    <div class="text">
+        <p>Designed and Developed by <a href="https://twitter.com/adeola2310" class="foot" target="_blank">@adeola2310</a></p>
+    </div>
+</footer>
+</body>
+<script>
+    var d = new Date();
+
+    document.getElementById("date").innerHTML
+        = d.getFullYear();
+</script>
+</html>
