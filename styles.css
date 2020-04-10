@@ -562,7 +562,6 @@ a {
         /*background-color: blue;*/
     }
 .header{
-    width: 70vw;
 }
 
     .banner{
@@ -574,6 +573,7 @@ a {
     }
     .banner__image{
         padding-top: 10rem;
+        width: 80vw;
     }
 }
 
