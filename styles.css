@@ -557,6 +557,33 @@ a {
 
 /* ================ Timeline Media Queries ================ */
 
+@media screen and (max-width: 992px) {
+    body {
+        /*background-color: blue;*/
+    }
+.header{
+    width: 70vw;
+}
+
+    .banner{
+    display: flex;
+        flex-direction: column;
+    }
+    .banner__text{
+        flex-basis: 2%;
+    }
+    .banner__image{
+        padding-top: 10rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: olive;
+    }
+}
+
 @media screen and (max-width: 660px) {
 
     .timeline {
