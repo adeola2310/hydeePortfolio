@@ -582,7 +582,7 @@ a {
 
     .license__sec{
         align-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) ;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 2fr)) ;
     }
     .skills__header{
         text-align: center;
