@@ -583,14 +583,20 @@ a {
 
 
 @media screen and (max-width: 600px) {
+.header__nav{
+    padding-left: 15px;
+}
 
     .banner{
         display: flex;
         flex-direction: column;
         padding-left: 15px;
     }
+   .profile-image{
+       width: 90vw;
+   }
     .banner__text--header{
-        font-size: 28px;
+        font-size: 36px;
         padding-top: 55px;
         overflow: hidden; /* Ensures the content is not revealed until the animation */
         border-right: .10em solid white; /* The typwriter cursor */
