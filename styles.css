@@ -11,10 +11,9 @@ html{
 }
 
 body{
-    /*font-family: 'Inconsolata', monospace;*/
-    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Handlee', cursive;
     background-color: #061224;
-    /*font-family: 'Open Sans Condensed', sans-serif;*/
 
 
 }
@@ -333,8 +332,8 @@ background-color: #ffffff;
     justify-content: space-between;
     padding: 25px 75px;
     color: #ffffff;
-    font-size: 16px;
-    border-top: 1px dotted #64ffda;
+    /*font-size: 15px;*/
+    border-top: 2px dotted #64ffda;
     background-color: #061224;
 }
 a {
@@ -582,11 +581,20 @@ a {
     }
 }
 
-
+@media screen and (max-width: 984px){
+.license{
+    margin-top: 50rem;
+}
+}
 @media screen and (max-width: 600px) {
 .header__nav{
     padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
+
+
 
     .banner{
         display: flex;
@@ -597,7 +605,7 @@ a {
        width: 85vw;
    }
     .banner__text--header{
-        font-size: 36px;
+        font-size: 30px;
         padding-top: 55px;
         overflow: hidden; /* Ensures the content is not revealed until the animation */
         border-right: .10em solid white; /* The typwriter cursor */
@@ -640,7 +648,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    /*font-size: 15px;*/
 }
 }
 
