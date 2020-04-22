@@ -333,6 +333,7 @@ background-color: #ffffff;
     justify-content: space-between;
     padding: 25px 75px;
     color: #ffffff;
+    font-size: 16px;
     border-top: 1px dotted #64ffda;
     background-color: #061224;
 }
@@ -593,7 +594,7 @@ a {
         padding-left: 15px;
     }
    .profile-image{
-       width: 90vw;
+       width: 85vw;
    }
     .banner__text--header{
         font-size: 36px;
@@ -639,6 +640,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
 }
 }
 
