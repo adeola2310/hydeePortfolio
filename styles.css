@@ -8,6 +8,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -645,8 +646,7 @@ a {
 
     .skills__box{
        display: grid;
-        grid-template-columns: repeat(3, 200px);
-        margin: 20px;
+        grid-template-columns: repeat(2, 200px);
         grid-column-gap: 15px;
     }
 
