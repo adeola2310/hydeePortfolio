@@ -303,7 +303,7 @@ background-color: #ffffff;
 
 }
 .skills__box{
-    margin: 30px 95px;
+    /*margin: 30px 95px;*/
     display: grid;
     /*grid-template-columns: repeat(4, 14fr);*/
     /*flex-wrap: wrap;*/
